@@ -1,0 +1,39 @@
+
+login002:
+  username: "1228799534347"
+  pwd: "1234056"
+  code: "8888"
+  success: False
+  expect: "账号格式不匹配"
+login003:
+  username: " "
+  pwd: "1234056"
+  code: "8888"
+  success: False
+  expect: "用户名不能为空"
+
+login004:
+  username: "18792534347"
+  pwd: " "
+  code: "8888"
+  success: False
+  expect: "密码不能为空"
+
+login005:
+  username: "18792534347"
+  pwd: "123456"
+  code: ""
+  success: False
+  expect: "验证码不能为空"
+login006:
+  username: "18792534311"
+  pwd: "123456"
+  code: ""
+  success: False
+  expect: "账号不存在"
+login001:
+  username: "18792534347"
+  pwd: "123456"
+  code: "8888"
+  success: True
+  expect: "亮亮"
